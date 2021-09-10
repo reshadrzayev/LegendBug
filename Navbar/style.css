@@ -1,0 +1,127 @@
+body, html {
+  overflow-x: hidden;
+}
+
+.navbarr {
+  overflow-x: hidden;
+  padding: 20px 0;
+  background: gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.navbarr .nav-list ul {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.navbarr .nav-list ul li {
+  margin: 0 20px;
+}
+
+.navbarr .nav-list ul li a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+  .navbarr {
+    position: absolute;
+    right: 0%;
+    width: 200px;
+    opacity: 0;
+    height: 500px;
+    -webkit-transform: translateX(200px);
+            transform: translateX(200px);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .navbarr ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbarr ul li {
+    margin: 20px 0 !important;
+  }
+}
+
+.navbar-active {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.burger {
+  cursor: pointer;
+  z-index: 555;
+  display: none;
+  position: absolute;
+  right: 3%;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  border: 1px solid gray;
+  border-radius: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.burger .line {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: black;
+  width: 25px;
+  height: 2px;
+}
+
+.burger .line1-active {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: rotate(-45deg) translate(-10px, 10px);
+          transform: rotate(-45deg) translate(-10px, 10px);
+}
+
+.burger .line2-active {
+  opacity: 0;
+}
+
+.burger .line3-active {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: rotate(45deg) translate(-6px, -9px);
+          transform: rotate(45deg) translate(-6px, -9px);
+}
+
+@media screen and (max-width: 768px) {
+  .burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+/*# sourceMappingURL=style.css.map */
