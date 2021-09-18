@@ -1,0 +1,54 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    div{
+        height: 400px;
+        width: 500px;
+    }
+    .section1{
+        background-color: red;
+    }
+    .section2{
+        background-color: blue;
+    }
+    .section3{
+        background-color: black;
+        transform: translateX(400px);
+        transition: 1s;
+    }
+    .section4{
+        background-color: orange;
+        transform: scale(0.1);
+        opacity: 0;
+        transition: 3s;
+    }
+    .section5{
+        background-color: pink;
+        opacity: 0;
+        transition: 2s;
+    }
+    .section6{
+        background-color: gray;
+        // opacity: 0;
+        // transition: 2s;
+    }
+    .section7{
+        background-color: brown;
+        // opacity: 0;
+        // transition: 2s;
+    }
+    .animatefromright{
+        transform: translateX(0);
+        transition: 1s;
+    }
+    .animatescale{
+        transform: scale(1);
+        opacity: 1;
+        transition: 3s;
+    }
+    .animateopacity{
+        opacity: 1;
+    }
+}
