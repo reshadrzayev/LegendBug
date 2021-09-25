@@ -1,0 +1,48 @@
+/* #owl-first .item{
+    height: 200px;
+    background-color: red;
+}
+
+#owl-second .item{
+    height: 1000px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+/* body{
+    
+} */
+/* .owl-first .fas{
+    width: 100px;
+} */
+
+button{
+    width: 150px;
+    height: 50px;
+    border-radius: 30px;
+    outline: none;
+    background-color: red;
+    border: none;
+    color: white;
+    position: relative;
+    z-index: 3;
+}
+button::after{
+    z-index: -1;
+    content: '';
+    width: 50px;
+    height: 30px;
+    background-color: blue;
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    border-radius: 20px;
+}
+button:hover::after{
+    width: 150px;
+    height: 50px;
+    border-radius: 30px;
+    top: 0;
+    right: 0;
+}
